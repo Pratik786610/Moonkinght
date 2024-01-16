@@ -41,9 +41,9 @@ class evamaria(Client):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['API_ID'])
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['BOT_TOKEN']
+API_ID = int(environ['27269318'])
+API_HASH = environ['9c1fe852e167a3e34fdcc5c30a66e7a3']
+BOT_TOKEN = environ['6552551682:AAEUIQcSN0GkWZlxbrvQoQi4We2o2RgYjek']
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -59,7 +59,7 @@ MELCOW_VID = environ.get('MELCOW_VID',"https://graph.org/file/11c15b34849e1d5e24
 
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('1006908145919', '').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -72,8 +72,8 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "doctorstrange")
+DATABASE_URI = environ.get('mongodb+srv://chillpill598:2I3SWGaaoGxIpkYU@cluster0.qfdcxhy.mongodb.net/?retryWrites=true&w=majority', "")
+DATABASE_NAME = environ.get('Cluster0', "doctorstrange")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 MONGO_URL = os.environ.get('MONGO_URL', "")
 
@@ -87,7 +87,7 @@ MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/wudixh")
 FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/wudixh2")
 MSG_ALRT = environ.get('MSG_ALRT', '𝙺𝚞𝚝𝚝𝚞 𝙱𝚘𝚝 ❣️')
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', 0))
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
+LOG_CHANNEL = int(environ.get('1002110995391', 0))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'wudixh1')
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
